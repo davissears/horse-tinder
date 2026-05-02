@@ -22,10 +22,22 @@ body {
 }
 
 .card {
+  --drag-x: 0px;
   background: white;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateX(var(--drag-x)) rotate(calc(var(--drag-x) / 40));
+  transition: transform 0.15s ease-out;
+  touch-action: none;
+}
+
+.card.swipe-left {
+  transform: translateX(-140px) rotate(-8deg);
+}
+
+.card.swipe-right {
+  transform: translateX(140px) rotate(8deg);
 }
 
 .card img {
