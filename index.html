@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neighborhood — Tinder for Horses</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>🐴 Neighborhood</h1>
+      <p class="tagline">Swipe right for hay, left for neigh.</p>
+
+      <section class="card" id="horse-card" aria-live="polite">
+        <img id="horse-image" alt="Horse profile image" />
+        <div class="card-body">
+          <h2 id="horse-name"></h2>
+          <p id="horse-bio"></p>
+        </div>
+      </section>
+
+      <section class="actions">
+        <button id="nope" class="btn nope" aria-label="Pass">👎 Neigh</button>
+        <button id="like" class="btn like" aria-label="Like">👍 Hay</button>
+      </section>
+
+      <section class="matches" id="matches">
+        <h3>Stable Matches</h3>
+        <ul id="match-list"></ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
